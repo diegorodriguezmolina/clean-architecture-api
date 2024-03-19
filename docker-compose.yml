@@ -1,0 +1,51 @@
+version: '3.5'
+
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: .docker/api/Dockerfile
+      args:
+        - ENABLE_XDEBUG=true
+        - XDEBUG_CLIENT_HOST=${XDEBUG_CLIENT_HOST-host.docker.internal}
+    image: fitness-api
+    restart: unless-stopped
+    environment:
+      - COMPOSER_ALLOW_SUPERUSER=1
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/srv
+    depends_on:
+      - mysql
+    networks:
+      - fitnessAPI
+
+  mysql:
+    container_name: fitnessAPI_mysql
+    image: docker.io/mysql:8.3.0
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=fitnessAPI
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_USER=fitness
+      - MYSQL_PASSWORD=fitness
+    healthcheck:
+      test: ["CMD", "mysqladmin", "--user=root", "--password=", "--host=127.0.0.1", "ping", "--silent"]
+      interval: 2s
+      timeout: 10s
+      retries: 10
+    command: ["--default-authentication-plugin=mysql_native_password"]
+    volumes:
+      - ./resources/mysql/wait_for_mysql.sh:/tmp/wait_for_mysql.sh
+    networks:
+      - fitnessAPI
+
+networks:
+  fitnessAPI:
+    name: fitnessAPI
+    ipam:
+      config:
+        - subnet: "${NETWORK_SUBNET}"
