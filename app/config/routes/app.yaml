@@ -1,0 +1,6 @@
+health_get:
+  path: /health
+  controller: FitnessApi\App\Controller\HealthCheckController
+  methods:  [GET]
+  defaults:
+    ignore_monitoring: true
