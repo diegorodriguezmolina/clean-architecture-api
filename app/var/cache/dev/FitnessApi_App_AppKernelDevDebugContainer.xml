@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">/Users/diegorodriguezmolina/dev/fitnessAPI/app</parameter>
+    <parameter key="kernel.project_dir">/var/www/html/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev</parameter>
-    <parameter key="kernel.cache_dir">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/log</parameter>
+    <parameter key="kernel.build_dir">/var/www/html/app/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">/var/www/html/app/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/var/www/html/app/var/log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
@@ -24,51 +24,51 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/framework-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/doctrine/doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/doctrine/doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/debug-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/debug-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/maker-bundle/src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/monolog-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="StimulusBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/stimulus-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/stimulus-bundle</parameter>
         <parameter key="namespace">Symfony\UX\StimulusBundle</parameter>
       </parameter>
       <parameter key="TurboBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/ux-turbo</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/ux-turbo</parameter>
         <parameter key="namespace">Symfony\UX\Turbo</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/web-profiler-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/symfony/web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/twig/extra-bundle</parameter>
+        <parameter key="path">/var/www/html/vendor/twig/extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
     </parameter>
@@ -109,32 +109,32 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="translator.logging">false</parameter>
-    <parameter key="translator.default_path">/Users/diegorodriguezmolina/dev/fitnessAPI/app/translations</parameter>
+    <parameter key="translator.default_path">/var/www/html/app/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/FitnessApi_App_AppKernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">/var/www/html/app/var/cache/dev/FitnessApi_App_AppKernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/serialization.php</parameter>
-    <parameter key="cache.prefix.seed">_/Users/diegorodriguezmolina/dev/fitnessAPI/app.FitnessApi_App_AppKernelDevDebugContainer</parameter>
+    <parameter key="serializer.mapping.cache.file">/var/www/html/app/var/cache/dev/serialization.php</parameter>
+    <parameter key="cache.prefix.seed">_/var/www/html/app.FitnessApi_App_AppKernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/sessions</parameter>
+    <parameter key="session.save_path">/var/www/html/app/var/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">/var/www/html/app/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/var/www/html/app/var/cache/dev/profiler</parameter>
     <parameter key="doctrine.dbal.configuration.class">Doctrine\DBAL\Configuration</parameter>
     <parameter key="doctrine.data_collector.class">Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector</parameter>
     <parameter key="doctrine.dbal.connection.event_manager.class">Symfony\Bridge\Doctrine\ContainerAwareEventManager</parameter>
@@ -182,7 +182,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/Users/diegorodriguezmolina/dev/fitnessAPI/app/templates</parameter>
+    <parameter key="twig.default_path">/var/www/html/app/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="data_collector.templates" type="collection">
@@ -354,7 +354,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/http_cache</argument>
+      <argument>/var/www/html/app/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -364,7 +364,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/FitnessApi_App_AppKernelDevDebugContainerDeprecations.log</argument>
+      <argument>/var/www/html/app/var/cache/dev/FitnessApi_App_AppKernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -574,7 +574,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -607,7 +607,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -781,7 +781,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -911,16 +911,16 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/translations</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/templates</argument>
+      <argument>/var/www/html/app/translations</argument>
+      <argument>/var/www/html/app/templates</argument>
       <argument type="collection">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations</argument>
+        <argument>/var/www/html/vendor/symfony/validator/Resources/translations</argument>
+        <argument>/var/www/html/vendor/symfony/form/Resources/translations</argument>
+        <argument>/var/www/html/vendor/symfony/security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Email</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Email</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -937,16 +937,16 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/translations</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/templates</argument>
+      <argument>/var/www/html/app/translations</argument>
+      <argument>/var/www/html/app/templates</argument>
       <argument type="collection">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations</argument>
+        <argument>/var/www/html/vendor/symfony/validator/Resources/translations</argument>
+        <argument>/var/www/html/vendor/symfony/form/Resources/translations</argument>
+        <argument>/var/www/html/vendor/symfony/security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Email</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Email</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1168,7 +1168,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1187,7 +1187,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/app</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1459,323 +1459,323 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/var/www/html/app/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.af.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.af.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.af.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
           </argument>
           <argument key="be" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
           </argument>
           <argument key="bs" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.bs.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.bs.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.bs.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.bs.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.bs.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.bs.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.et.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.fi.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.fi.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.hy.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.mn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.mn.xlf</argument>
           </argument>
           <argument key="my" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.my.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.my.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.my.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.my.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.my.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.my.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.pt.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.pt.xlf</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.sq.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.sq.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.sq.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.th.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.th.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
           </argument>
           <argument key="tl" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
           </argument>
           <argument key="ur" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.ur.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.ur.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.ur.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.ur.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.ur.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.ur.xlf</argument>
           </argument>
           <argument key="uz" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.uz.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.uz.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.uz.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.uz.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.uz.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.uz.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.vi.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.vi.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.vi.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.vi.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.zh_CN.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.zh_CN.xlf</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations/validators.zh_TW.xlf</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations/security.zh_TW.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations/security.zh_TW.xlf</argument>
           </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/framework-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-migrations-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/debug-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/maker-bundle/src/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/monolog-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/stimulus-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/ux-turbo/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/web-profiler-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/twig/extra-bundle/translations</argument>
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/translations</argument>
+          <argument>/var/www/html/vendor/symfony/validator/Resources/translations</argument>
+          <argument>/var/www/html/vendor/symfony/form/Resources/translations</argument>
+          <argument>/var/www/html/vendor/symfony/security-core/Resources/translations</argument>
+          <argument>/var/www/html/vendor/symfony/framework-bundle/translations</argument>
+          <argument>/var/www/html/vendor/doctrine/doctrine-bundle/translations</argument>
+          <argument>/var/www/html/vendor/doctrine/doctrine-migrations-bundle/translations</argument>
+          <argument>/var/www/html/vendor/symfony/debug-bundle/translations</argument>
+          <argument>/var/www/html/vendor/symfony/maker-bundle/src/translations</argument>
+          <argument>/var/www/html/vendor/symfony/monolog-bundle/translations</argument>
+          <argument>/var/www/html/vendor/symfony/security-bundle/translations</argument>
+          <argument>/var/www/html/vendor/symfony/stimulus-bundle/translations</argument>
+          <argument>/var/www/html/vendor/symfony/ux-turbo/translations</argument>
+          <argument>/var/www/html/vendor/symfony/twig-bundle/translations</argument>
+          <argument>/var/www/html/vendor/symfony/web-profiler-bundle/translations</argument>
+          <argument>/var/www/html/vendor/twig/extra-bundle/translations</argument>
+          <argument>/var/www/html/app/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/validator/Resources/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-core/Resources/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/framework-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-migrations-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/debug-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/maker-bundle/src/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/monolog-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/stimulus-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/ux-turbo/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/web-profiler-bundle/translations</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/twig/extra-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/validator/Resources/translations</argument>
+            <argument>/var/www/html/vendor/symfony/form/Resources/translations</argument>
+            <argument>/var/www/html/vendor/symfony/security-core/Resources/translations</argument>
+            <argument>/var/www/html/vendor/symfony/framework-bundle/translations</argument>
+            <argument>/var/www/html/vendor/doctrine/doctrine-bundle/translations</argument>
+            <argument>/var/www/html/vendor/doctrine/doctrine-migrations-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/debug-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/maker-bundle/src/translations</argument>
+            <argument>/var/www/html/vendor/symfony/monolog-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/security-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/stimulus-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/ux-turbo/translations</argument>
+            <argument>/var/www/html/vendor/symfony/twig-bundle/translations</argument>
+            <argument>/var/www/html/vendor/symfony/web-profiler-bundle/translations</argument>
+            <argument>/var/www/html/vendor/twig/extra-bundle/translations</argument>
             <argument>translations</argument>
           </argument>
         </argument>
@@ -2024,7 +2024,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter">
       <argument>%env(default::SYMFONY_IDE)%</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <argument type="service_closure" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2281,14 +2281,6 @@
         <argument>200</argument>
       </call>
       <call method="addListener">
-        <argument>Symfony\Component\Messenger\Event\WorkerRunningEvent</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="messenger.listener.dispatch_pcntl_signal_listener"/>
-          <argument>onWorkerRunning</argument>
-        </argument>
-        <argument>100</argument>
-      </call>
-      <call method="addListener">
         <argument>Symfony\Component\Messenger\Event\WorkerStartedEvent</argument>
         <argument type="collection">
           <argument type="service_closure" id="messenger.listener.stop_worker_on_restart_signal_listener"/>
@@ -2303,14 +2295,6 @@
           <argument>onWorkerRunning</argument>
         </argument>
         <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>Symfony\Component\Messenger\Event\WorkerStartedEvent</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="messenger.listener.stop_worker_on_sigterm_signal_listener"/>
-          <argument>onWorkerStarted</argument>
-        </argument>
-        <argument>100</argument>
       </call>
       <call method="addListener">
         <argument>Symfony\Component\Messenger\Event\WorkerMessageFailedEvent</argument>
@@ -2597,7 +2581,7 @@
       <argument type="service" id=".service_locator.OSH1YoD.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev</argument>
+        <argument key="cache_dir">/var/www/html/app/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2647,7 +2631,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2690,7 +2674,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>/var/www/html/app/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString">
@@ -2699,7 +2683,7 @@
       <factory class="Symfony\Component\String\LazyString" method="fromCallable"/>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/.env.dev.local</argument>
+      <argument>/var/www/html/app/.env.dev.local</argument>
     </service>
     <service id="serializer.mapping.class_discriminator_resolver" class="Symfony\Component\Serializer\Mapping\ClassDiscriminatorFromClassMetadata">
       <argument type="service" id="serializer.mapping.class_metadata_factory"/>
@@ -2732,10 +2716,10 @@
           </service>
         </argument>
       </argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/serialization.php</argument>
+      <argument>/var/www/html/app/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface">
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/serialization.php</argument>
+      <argument>/var/www/html/app/var/cache/dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2849,7 +2833,7 @@
       <argument>false</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/sessions</argument>
+      <argument>/var/www/html/app/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -2861,7 +2845,7 @@
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler">
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/sessions</argument>
+          <argument>/var/www/html/app/var/cache/dev/sessions</argument>
         </service>
       </argument>
     </service>
@@ -3016,7 +3000,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/form/Resources/config/validation.xml</argument>
+          <argument>/var/www/html/vendor/symfony/form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -3036,10 +3020,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/validation.php</argument>
+      <argument>/var/www/html/app/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/validation.php</argument>
+      <argument>/var/www/html/app/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3344,7 +3328,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/profiler</argument>
+      <argument>file:/var/www/html/app/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -3391,7 +3375,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/FitnessApi_App_AppKernelDevDebugContainer</argument>
+      <argument>/var/www/html/app/var/cache/dev/FitnessApi_App_AppKernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -3736,7 +3720,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/migrations</argument>
+        <argument>/var/www/html/app/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -3954,7 +3938,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+            <argument>/var/www/html/app</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -3976,7 +3960,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+            <argument>/var/www/html/app</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -4032,8 +4016,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/templates</argument>
+      <argument>/var/www/html/app</argument>
+      <argument>/var/www/html/app/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -4190,7 +4174,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <argument type="service" id="maker.file_link_formatter"/>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
@@ -4245,7 +4229,7 @@
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <tag name="kernel.reset" method="reset"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/log/dev.log</argument>
+      <argument>/var/www/html/app/var/log/dev.log</argument>
       <argument>debug</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -4865,7 +4849,7 @@
       <argument type="service" id="stimulus.helper"/>
     </service>
     <service id="stimulus.asset_mapper.ux_package_reader" class="Symfony\UX\StimulusBundle\Ux\UxPackageReader">
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
     </service>
     <service id="stimulus.ux_controllers_twig_extension" class="Symfony\UX\StimulusBundle\Twig\UxControllersTwigExtension">
       <tag name="twig.extension"/>
@@ -4905,7 +4889,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/twig</argument>
+        <argument key="cache">/var/www/html/app/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -5020,10 +5004,10 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Email">email</argument>
-        <argument key="/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+        <argument key="/var/www/html/vendor/symfony/twig-bridge/Resources/views/Email">email</argument>
+        <argument key="/var/www/html/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/templates</argument>
+      <argument>/var/www/html/app/templates</argument>
       <argument type="collection"/>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
@@ -5035,57 +5019,57 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-bundle/templates</argument>
+        <argument>/var/www/html/vendor/doctrine/doctrine-bundle/templates</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-bundle/templates</argument>
+        <argument>/var/www/html/vendor/doctrine/doctrine-bundle/templates</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/debug-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/symfony/debug-bundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/debug-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/symfony/debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/symfony/security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/symfony/security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Email</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Email</argument>
         <argument>email</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Email</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Email</argument>
         <argument>!email</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>/var/www/html/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -5111,7 +5095,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -5200,9 +5184,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/templates</argument>
+      <argument>/var/www/html/app/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -5239,7 +5223,7 @@
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app</argument>
+      <argument>/var/www/html/app</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -7158,76 +7142,76 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>cnaf2LviTA</argument>
+      <argument>rrkxB18m6T</argument>
       <argument>0</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/app</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>UcO4JjE77a</argument>
+      <argument>zmMc8q71vU</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>zbmxxh+koI</argument>
+      <argument>SUtEJzvuIO</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>2BS-QvgnPM</argument>
+      <argument>A8tbdEt10Z</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>6GgKS6O6Ag</argument>
+      <argument>kAJgv09DgO</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>T80rRZrWzc</argument>
+      <argument>kcy1UQDBjO</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>e+vu8i4SDN</argument>
+      <argument>3djuS0d155</argument>
       <argument>0</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/app</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.validator_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>8ZXEU4bWtH</argument>
+      <argument>Xz1Dyp3nSq</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>cJ-ScfHDdd</argument>
+      <argument>AAvdbqA7Gj</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/Users/diegorodriguezmolina/dev/fitnessAPI/app/var/cache/dev/pools/system</argument>
+      <argument>/var/www/html/app/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
