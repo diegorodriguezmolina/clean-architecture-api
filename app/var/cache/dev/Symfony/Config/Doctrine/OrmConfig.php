@@ -91,7 +91,7 @@ class OrmConfig
     }
 
     /**
-     * @default {"enabled":true,"auto_mapping":true,"evict_cache":false}
+     * @default {"enabled":true,"auto_mapping":null,"evict_cache":false}
     */
     public function controllerResolver(array $value = []): \Symfony\Config\Doctrine\Orm\ControllerResolverConfig
     {

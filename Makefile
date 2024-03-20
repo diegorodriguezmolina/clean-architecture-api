@@ -9,8 +9,12 @@ help: ## Outputs this help screen
 ##
 ## 🐳 Docker
 .PHONY .SILENT:
-start-api:
-	docker-compose up -d api
+start:
+	docker-compose up -d
+
+.PHONY .SILENT:
+stop:
+	docker-compose down
 
 .PHONY .SILENT:
 destroy-api:
