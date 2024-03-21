@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-namespace App\Routine\Domain;
+namespace FitnessApi\Routine\Domain;
 
-use App\Shared\Domain\IntValueObject;
+use App\Shared\Domain\StringValueObject;
 
-final class Id  extends IntValueObject {}
+final class Id  extends StringValueObject {}

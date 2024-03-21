@@ -1,16 +1,6 @@
 version: '3.5'
 
 services:
-  web:
-    image: nginx:latest
-    ports:
-      - '80:80'
-    volumes:
-      - .:/var/www/html
-      - ./.docker/api/default.conf:/etc/nginx/conf.d/default.conf
-    networks:
-      - internal
-
   php:
     build:
       context: ./
@@ -26,6 +16,18 @@ services:
       - .:/var/www/html
     depends_on:
       - mysql
+    networks:
+      - internal
+
+  web:
+    image: nginx:latest
+    ports:
+      - '80:80'
+    volumes:
+      - .:/var/www/html
+      - ./.docker/api/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
     networks:
       - internal
 

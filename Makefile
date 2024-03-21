@@ -27,3 +27,17 @@ start-mysql:
 .PHONY .SILENT:
 destroy-mysql:
 	docker-compose rm --stop --force --volumes mysql
+
+##
+## ⚒️ Quality Tools
+.PHONY .SILENT:
+phpstan:
+	docker-compose exec php composer phpstan
+
+
+##
+## 🚦️Tests
+.PHONY .SILENT:
+tests:
+	docker-compose exec php composer tests
+
