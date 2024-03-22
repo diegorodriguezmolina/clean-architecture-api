@@ -4,6 +4,6 @@ declare(strict_types=1);
 
 namespace FitnessApi\Routine\Domain;
 
-use App\Shared\Domain\StringValueObject;
+use App\Shared\Domain\IntValueObject;
 
-final class Level extends StringValueObject {}
+final class Level extends IntValueObject {}
