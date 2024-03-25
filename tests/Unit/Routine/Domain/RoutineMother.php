@@ -14,18 +14,11 @@ use FitnessApi\Routine\Domain\Routine as Routine;
 final class RoutineMother
 {
     public static function create(?Id $id, ?Name $name, ?Description $description, ?Level $level): Routine {
-        if (is_null($id)){
-            $id = Factory::create()->uuid;
-        }
-        if (is_null($name)){
-            $name = Factory::create()->name;
-        }
-        if (is_null($description)){
-            $description = Factory::create()->streetName;
-        }
-        if (is_null($level)){
-            $level = Factory::create()->randomNumber();
-        }
+        $id = $id ?? Factory::create()->uuid;
+        $name = $name ?? Factory::create()->name;
+        $description = $description ?? Factory::create()->streetName;
+        $level = $level ?? Factory::create()->randomNumber();
+
         return Routine::create($id, $name, $description, $level);
     }
 }
