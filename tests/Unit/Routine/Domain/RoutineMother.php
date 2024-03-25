@@ -18,9 +18,9 @@ final class RoutineMother
 
         return Routine::create(
             $id ?? $faker->uuid,
-                $name ?? $faker->name ,
-                $description ?? $faker->streetName,
-                $level ?? $faker->randomNumber()
+            $name ?? $faker->name,
+            $description ?? $faker->streetName,
+            $level ?? $faker->randomNumber()
         );
     }
 }
