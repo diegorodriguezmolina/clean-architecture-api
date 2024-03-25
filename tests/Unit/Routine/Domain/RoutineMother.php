@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Routine\Domain;
+namespace FitnessApi\Tests\Unit\Routine\Domain;
 
 use FitnessApi\Routine\Domain\Description as Description;
 use FitnessApi\Routine\Domain\Id as Id;
