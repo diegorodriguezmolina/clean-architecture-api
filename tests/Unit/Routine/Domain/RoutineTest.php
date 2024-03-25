@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
+namespace FitnessApi\Tests\Unit\Routine\Domain;
 
-use App\Routine\Domain\RoutineMother;
 use FitnessApi\Routine\Domain\Description as Description;
 use FitnessApi\Routine\Domain\Id as Id;
 use FitnessApi\Routine\Domain\Level as Level;

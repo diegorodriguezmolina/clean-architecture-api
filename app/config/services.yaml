@@ -13,10 +13,14 @@ services:
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
+    FitnessApi\:
+        resource: '../../src/'
     FitnessApi\App\:
         resource: '../src/'
         exclude:
             - '../src/DependencyInjection/'
             - '../src/AppKernel.php'
+    FitnessApi\Tests\:
+      resource: '../../tests'
     FitnessApi\App\Controller\:
         resource: '../src/Controller'
