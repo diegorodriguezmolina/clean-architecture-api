@@ -4,3 +4,9 @@ health_get:
   methods:  [GET]
   defaults:
     ignore_monitoring: true
+create_user:
+  path: /user/create
+  controller: FitnessApi\App\Controller\User\CreateUserController
+  methods:  [POST]
+  defaults:
+    ignore_monitoring: true

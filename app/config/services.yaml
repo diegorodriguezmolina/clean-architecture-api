@@ -24,3 +24,4 @@ services:
       resource: '../../tests'
     FitnessApi\App\Controller\:
         resource: '../src/Controller'
+        tags: ['controller.service_arguments']
