@@ -32,10 +32,10 @@ destroy-mysql:
 ## ⚒️ Quality Tools
 .PHONY .SILENT:
 phpstan:
-	docker-compose exec fitnessapi-php-1 composer phpstan
+	docker-compose exec php composer phpstan
 
 enter:
-	docker exec -it fitnessapi-php-1 bash
+	docker exec -it php bash
 
 ##
 ## 🚦️Tests

@@ -12,13 +12,11 @@ const NAME = "name";
 
 final class CreateUserController
 {
-    public function __construct(private readonly CreateUserUseCase $createUserUseCase)
-    {
-    }
+    public function __construct(private readonly CreateUserUseCase $createUserUseCase){}
 
     public function __invoke(Request $request): JsonResponse
     {
-        $this->createUserUseCase->__invoke($request->get(NAME));
+        $this->createUserUseCase->execute($request->get(NAME));
 
         return new JsonResponse(
             [

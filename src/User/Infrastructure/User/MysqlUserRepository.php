@@ -2,11 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FitnessApi\User\Application;
+namespace FitnessApi\User\Infrastructure\User;
 
-use FitnessApi\Shared\Domain\Aggregate\AggregateRoot;
 use FitnessApi\Shared\Infrastructure\Mysql\DoctrineRepository;
-use FitnessApi\User\Domain\Name;
 use FitnessApi\User\Domain\User;
 use FitnessApi\User\Domain\UserRepository;
 

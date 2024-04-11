@@ -12,7 +12,7 @@ final class CreateUserUseCase
 {
     public function __construct(private readonly UserRepository $userRepository){}
 
-    public function __invoke(string $name): void
+    public function execute(string $name): void
     {
         $this->userRepository->create(User::create(new Name($name)));
     }
