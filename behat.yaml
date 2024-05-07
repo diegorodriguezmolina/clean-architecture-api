@@ -1,0 +1,16 @@
+default:
+  extensions:
+    FriendsOfBehat\SymfonyExtension:
+      kernel:
+        class: FitnessApi\App\AppKernel
+        environment: test
+    Behat\MinkExtension:
+      base_url: 'http://127.0.0.1'
+      sessions:
+        symfony:
+          symfony: ~
+  suites:
+    user:
+      paths: [ tests/Acceptance/User ]
+      contexts:
+        - FitnessApi\Tests\Acceptance\User\UserContext

@@ -12,15 +12,6 @@ symfony.lock
 /app/var/cache/*
 /app/var/logs/*
 /app/var/sessions/*
-<<<<<<< Updated upstream
-!app/var/cache/.gitkeep
-!app/var/logs/.gitkeep
-!app/var/sessions/.gitkeep
-
-# Logs (Symfony4)
-/app/var/log/*
-!app/var/log/.gitkeep
-=======
 /app/!var/cache/.gitkeep
 /app/!var/logs/.gitkeep
 /app/!var/sessions/.gitkeep
@@ -28,7 +19,6 @@ symfony.lock
 # Logs (Symfony4)
 /app/var/log/*
 /app/!var/log/.gitkeep
->>>>>>> Stashed changes
 
 # Parameters
 /app/config/parameters.yml
@@ -73,6 +63,7 @@ symfony.lock
 ###< symfony/phpunit-bridge ###
 
 .idea
+.vscode/
 
 ###> symfony/framework-bundle ###
 /.env.local
